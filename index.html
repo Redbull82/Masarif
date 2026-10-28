@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07090f">
+<meta name="color-scheme" content="dark">
+<title>مصاريفي</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#f2f4f8;--mut:#9aa4b4;--gl:rgba(255,255,255,.08);--gl2:rgba(255,255,255,.14);--edge:rgba(255,255,255,.15);--grn:#30d158;--red:#ff453a;--gold:#ffd60a;--pur:#bf5af2;--blue:#64d2ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);color-scheme:dark}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;margin:0}
+html,body{min-height:100%}
+body{font-family:Cairo,system-ui,sans-serif;color:var(--ink);background:radial-gradient(circle at 12% -5%,#14396d99,transparent 48%),radial-gradient(circle at 95% 28%,#3d1a6b88,transparent 46%),radial-gradient(circle at 20% 95%,#0e4a4577,transparent 50%),#07090f;background-attachment:fixed;padding-bottom:calc(110px + env(safe-area-inset-bottom,0px));transition:background .6s}
+body.vm{background:radial-gradient(circle at 50% -10%,#6a3fb199,transparent 55%),radial-gradient(circle at 90% 80%,#b8901f55,transparent 50%),#0e0719}
+main{max-width:480px;margin:0 auto;padding:14px 16px}
+.gl{background:var(--gl);border:1px solid var(--edge);backdrop-filter:blur(26px) saturate(180%);-webkit-backdrop-filter:blur(26px) saturate(180%);border-radius:28px;box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 14px 40px rgba(0,0,0,.35)}
+.card{padding:20px;margin-bottom:14px}
+.scr{animation:in .45s cubic-bezier(.2,.8,.2,1)}
+@keyframes in{from{opacity:0;transform:translateY(14px) scale(.985)}}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.pill{padding:7px 15px;border-radius:99px;font-weight:700;font-size:14px}
+.ib{width:42px;height:42px;border-radius:50%;border:1px solid var(--edge);background:var(--gl);color:var(--ink);font-size:18px;cursor:pointer;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+button{font:inherit;color:inherit;cursor:pointer;transition:transform .18s cubic-bezier(.3,1.5,.5,1),background .2s}
+button:active{transform:scale(.94)}
+button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.hero{text-align:center;padding:22px 16px 22px}
+.acc{display:grid;grid-template-columns:1fr 1.5fr 1fr;gap:8px}
+.ac{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:12px 4px;border-radius:20px;background:rgba(255,255,255,.07);border:1px solid var(--edge);color:var(--ink);min-width:0}
+.ac i{font-style:normal;display:grid;place-items:center;width:40px;height:40px;border-radius:13px;background:rgba(255,255,255,.1);margin-bottom:2px}.ac.mid i{background:rgba(48,209,88,.18);width:46px;height:46px}.ac b{font-size:19px;font-weight:800}.ac span{font-size:11px;color:var(--mut);font-weight:600}
+.ac.mid{background:rgba(255,255,255,.14);padding:14px 4px}.ac.mid b{font-size:36px;font-weight:900;letter-spacing:-1px}
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:8px 0}.sg button{padding:12px 4px;border-radius:16px;border:1.5px solid transparent;background:rgba(255,255,255,.08);font-size:13px;font-weight:700}.sg button span{display:block;font-size:22px}.sg button.on{border-color:var(--blue);background:rgba(100,210,255,.2)}
+.lbl{color:var(--mut);font-size:14px;font-weight:600}
+.big{font-size:64px;font-weight:900;line-height:1.15;letter-spacing:-2px;margin:6px 0}
+.big small{font-size:20px;font-weight:700;letter-spacing:0;color:var(--mut)}
+.sub{display:flex;justify-content:center;gap:26px;color:var(--mut);font-size:12px;margin-top:6px}.sub b{display:block;font-size:17px;color:var(--ink)}
+.bar{height:10px;border-radius:9px;background:rgba(255,255,255,.1);overflow:hidden;margin:16px 0 0}.bar i{display:block;height:100%;border-radius:9px;transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.act{display:flex;align-items:center;gap:10px;padding:16px 14px;border-radius:22px;font-weight:800;font-size:15px;border:1px solid var(--edge)}
+.act em{font-style:normal;width:38px;height:38px;border-radius:13px;display:grid;place-items:center;font-size:20px;background:rgba(255,255,255,.12)}
+.ae{background:rgba(255,69,58,.18);color:#ff8a82}.ai{background:rgba(48,209,88,.18);color:#6ee890}
+.wide{display:block;width:100%;padding:15px;border-radius:18px;border:1px solid var(--edge);background:var(--gl2);font-weight:700;font-size:15px;margin-top:10px}
+.wide.p{background:var(--blue);color:#06202b;border-color:transparent}.wide.gd{background:linear-gradient(135deg,#ffd60a,#d99a00);color:#2a1d00;border-color:transparent}.wide.pu{background:var(--pur);color:#fff;border-color:transparent}
+h2{font-size:17px;font-weight:800;margin-bottom:10px}
+.tx{display:flex;align-items:center;gap:11px;padding:11px 0;border-top:1px solid var(--edge)}.tx:first-of-type{border-top:0}
+.ti{width:42px;height:42px;border-radius:14px;background:rgba(255,255,255,.1);display:grid;place-items:center;font-size:20px;flex:none}
+.tx>div:nth-child(2){flex:1;min-width:0;font-weight:700;font-size:14px}.tx small{display:block;color:var(--mut);font-weight:400;font-size:12px}
+.tx b{font-weight:800}.tx .x{background:none;border:0;color:var(--mut);font-size:16px;padding:6px}
+.p{color:var(--grn)}.n{color:var(--red)}.mut{color:var(--mut);font-size:13px}
+.ban{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:13px 16px;border-radius:20px;margin-bottom:14px;background:linear-gradient(135deg,rgba(255,214,10,.22),rgba(255,255,255,.07));border:1px solid rgba(255,214,10,.4);font-weight:700;font-size:14px}
+.ban button{background:var(--gold);color:#2a1d00;border:0;border-radius:12px;padding:8px 14px;font-weight:800;white-space:nowrap}
+.br{display:grid;grid-template-columns:96px 1fr 62px;gap:8px;align-items:center;font-size:13px;padding:6px 0}.br div{height:10px;border-radius:9px;background:rgba(255,255,255,.1);overflow:hidden}.br i{display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,var(--blue),var(--grn));transition:width 1s}.br b{text-align:left;font-size:12px}
+.tip{padding:13px 15px;border-radius:18px;background:rgba(48,209,88,.12);border:1px solid rgba(48,209,88,.25);font-size:14px;line-height:1.8;margin-top:8px}
+.vh{text-align:center;padding:28px 20px;background:linear-gradient(150deg,rgba(255,214,10,.2),rgba(191,90,242,.14));border-color:rgba(255,214,10,.4)}
+.vh .big{color:var(--gold)}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:center;padding:0 16px calc(12px + env(safe-area-inset-bottom,0px));z-index:5}
+nav div{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;width:100%;max-width:420px;padding:7px;border-radius:30px;background:rgba(30,34,46,.6);border:1px solid var(--edge);backdrop-filter:blur(30px) saturate(180%);-webkit-backdrop-filter:blur(30px) saturate(180%);box-shadow:0 16px 44px rgba(0,0,0,.5)}
+nav button{border:0;background:none;border-radius:23px;padding:8px 2px;font-size:12px;font-weight:700;color:var(--mut);display:flex;flex-direction:column;align-items:center;gap:2px}nav button span{font-size:21px}
+nav button.on{background:rgba(255,255,255,.14);color:var(--ink)}
+#ov{position:fixed;inset:0;background:rgba(0,0,0,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);z-index:20;display:flex;align-items:flex-end;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s}
+#ov.on{opacity:1;pointer-events:auto}
+#sh{width:100%;max-width:480px;max-height:92dvh;overflow:auto;border-radius:32px 32px 0 0;padding:10px 20px calc(22px + env(safe-area-inset-bottom,0px));background:rgba(26,30,42,.92);transform:translateY(100%);transition:transform .5s cubic-bezier(.32,1.15,.4,1)}
+#ov.on #sh{transform:none}
+.grab{display:block;width:40px;height:5px;border-radius:9px;background:var(--edge);margin:0 auto 16px}
+#sh h3{font-size:20px;font-weight:800;margin-bottom:12px}
+input,textarea{font:inherit;width:100%;padding:14px 16px;border-radius:16px;border:1px solid var(--edge);background:rgba(255,255,255,.08);color:var(--ink);font-size:22px;font-weight:700;margin:6px 0}
+input.s,textarea{font-size:16px;font-weight:400}
+.cg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:8px 0}
+.cg button{padding:12px 4px;border-radius:16px;border:1.5px solid transparent;background:rgba(255,255,255,.08);font-size:13px;font-weight:700}.cg button span{display:block;font-size:22px}.cg button.on{border-color:var(--red);background:rgba(255,69,58,.2)}
+#tt{position:fixed;top:calc(14px + env(safe-area-inset-top,0px));left:50%;transform:translate(-50%,-80px);background:rgba(40,44,58,.92);border:1px solid var(--edge);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:11px 20px;border-radius:99px;font-weight:700;font-size:14px;z-index:50;transition:transform .5s cubic-bezier(.32,1.3,.4,1);white-space:nowrap;max-width:92vw}
+#tt.on{transform:translate(-50%,0)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main id="v"></main>
+<div id="tt" role="status"></div>
+<div id="ov"><div id="sh" class="gl"></div></div>
+<nav><div><button data-t="today"><span>🏠</span>اليوم</button><button data-t="vault"><span>🔐</span>الخزنة</button><button data-t="stats"><span>📊</span>الإحصائيات</button></div></nav>
+<script>
+const CATS=[['أكل','🍳'],['مواصلات','🚌'],['مشاريب','☕'],['سجاير','🚬'],['أخرى','🛍']],UNK='غير معروف',IC={};
+CATS.forEach(c=>IC[c[0]]=c[1]);IC[UNK]='❓';IC['دخل']='💰';IC['عمولة']='💼';IC['قهوة وشاي']='☕';
+let S={days:{},vault:{bal:400,log:[]},budget:8000,target:400,salary:null,wal:null,ins:null},tab='today',cat_=CATS[0][0];
+const norm=o=>({days:o.days||{},vault:{bal:o.vault&&typeof o.vault.bal=='number'?o.vault.bal:400,log:(o.vault&&o.vault.log)||[]},budget:+o.budget||8000,target:+o.target||400,salary:+o.salary||null,wal:o.wal==null?null:+o.wal,ins:o.ins==null?null:+o.ins});
+try{const r=localStorage.getItem('masarif');if(r)S=norm(JSON.parse(r))}catch(e){}
+const save=()=>{try{localStorage.setItem('masarif',JSON.stringify(S))}catch(e){}};
+const $=s=>document.querySelector(s),N=x=>Math.round(x).toLocaleString('ar-EG');
+const esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const key=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const now=new Date(),TK=key(now),MK=TK.slice(0,7);
+const sum=(d,t)=>(d.tx||[]).filter(x=>x.t==t).reduce((a,x)=>a+x.a,0),day=()=>S.days[TK],cs=(d,t)=>(d.tx||[]).filter(x=>x.t==t&&(x.s||'cash')=='cash').reduce((a,x)=>a+x.a,0),rem=d=>d.start+cs(d,'i')-cs(d,'e');
+const SN={cash:'كاش',wal:'محفظة',ins:'إنستا باي'};let src_=null;
+const sv=p=>'<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+p+'</svg>';
+const IK={cash:sv('<rect x="2.5" y="6" width="19" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.8"/><path d="M6 9.5h.01M18 14.5h.01"/>'),wal:sv('<path d="M17 7V5.5A1.5 1.5 0 0 0 15.5 4H6a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-8a2 2 0 0 0-2-2H6"/><circle cx="16.5" cy="14" r="1.2"/>'),ins:sv('<rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M9 10l3-3 3 3M15 14l-3 3-3-3"/>')};
+function bal(s,v){if(s=='wal')S.wal+=v;else if(s=='ins')S.ins+=v}
+const due=()=>Math.max(0,S.target-S.vault.bal);
+function toast(m){const t=$('#tt');t.textContent=m;t.classList.add('on');clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove('on'),2400)}
+function sheet(h){$('#sh').innerHTML='<i class="grab"></i>'+h;$('#ov').classList.add('on');const i=$('#sh input');if(i)setTimeout(()=>i.focus(),420)}
+function closeS(){$('#ov').classList.remove('on')}
+$('#ov').onclick=e=>{if(e.target.id=='ov'&&S.salary!=null&&S.wal!=null)closeS()};
+function cu(){const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;document.querySelectorAll('[data-v]').forEach(el=>{const v=+el.dataset.v;if(rm){el.textContent=N(v);return}const t0=performance.now();(function f(t){const p=Math.min(1,(t-t0)/1000),e=1-Math.pow(1-p,4);el.textContent=N(v*e);if(p<1)requestAnimationFrame(f)})(t0)})}
+function render(){
+ document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.t==tab));
+ document.body.classList.toggle('vm',tab=='vault');
+ const dl=now.toLocaleDateString('ar-EG',{weekday:'long',day:'numeric',month:'long'});
+ $('#v').innerHTML=`<div class="top"><span class="pill gl">${dl}</span><button class="ib" onclick="settings()" aria-label="الإعدادات">⚙️</button></div><div class="scr">${tab=='today'?today():tab=='vault'?vault():stats()}</div>`;
+ cu();requestAnimationFrame(()=>document.querySelectorAll('[data-w]').forEach(e=>e.style.width=e.dataset.w+'%'));
+}
+function allow(){const dim=new Date(now.getFullYear(),now.getMonth()+1,0).getDate();let b=0;for(const k in S.days)if(k.startsWith(MK)&&k<TK)b+=sum(S.days[k],'e');return Math.max(0,(S.budget-b)/(dim-now.getDate()+1))}
+function today(){
+ const d=day();
+ if(!d)return `<div class="gl card hero"><div class="lbl">صباح الخير ☀️</div><div class="big" style="font-size:34px">نزلت بكام النهارده؟</div><p class="mut">عدّ الفلوس اللي معاك واكتبها.</p><button class="wide p" onclick="startS()">ابدأ اليوم</button></div>`;
+ const left=rem(d),sp=sum(d,'e'),al=allow(),over=sp>al;
+ return `${now.getHours()>=20&&d.end==null?`<div class="ban"><span>🌙 قرب اليوم يخلص. عدّ فلوسك وقفّل الحساب.</span><button onclick="endS()">قفّل</button></div>`:''}
+ <div class="gl card hero"><div class="acc"><button class="ac" onclick="balS('ins')"><i style="color:var(--blue)">${IK.ins}</i><b data-v="${S.ins||0}">٠</b><span>إنستا باي</span></button><button class="ac mid" onclick="cashS()"><i style="color:var(--grn)">${IK.cash}</i><b class="${left<0?'n':''}" data-v="${left}">٠</b><span>كاش في إيدك</span></button><button class="ac" onclick="balS('wal')"><i style="color:var(--gold)">${IK.wal}</i><b data-v="${S.wal||0}">٠</b><span>المحفظة</span></button></div>
+ <p class="mut" style="font-size:11px;margin-top:8px">دوس على أي رصيد لتعديله</p>
+ <div class="sub"><div><b>${N(sp)}</b>صرفت</div><div><b>${N(sum(d,'i'))}</b>دخل</div><div><b>${N(al)}</b>الحد المناسب</div></div>
+ <div class="bar"><i data-w="${Math.min(100,al?sp/al*100:0)}" style="width:0;background:${over?'var(--red)':'var(--grn)'}"></i></div></div>
+ <div class="g2"><button class="act ae" onclick="txS('e')"><em>➖</em>مصروف</button><button class="act ai" onclick="txS('i')"><em>➕</em>دخل</button></div>
+ <button class="act ai" style="width:100%;margin:-4px 0 14px" onclick="txS('c')"><em>💼</em>عمولة جاتلي</button>
+ <div class="gl card"><h2>معاملات اليوم</h2>${(d.tx||[]).slice().reverse().map((x,j,a)=>`<div class="tx"><div class="ti">${IC[x.c]||'🛍'}</div><div>${esc(x.c)}<small>${SN[x.s||'cash']}${x.n?' · '+esc(x.n):''}</small></div><b class="${x.t=='e'?'n':'p'}">${x.t=='e'?'−':'+'}${N(x.a)}</b><button class="x" aria-label="حذف" onclick="del(${a.length-1-j})">✕</button></div>`).join('')||'<p class="mut">لسه مفيش حاجة. سجّل أول مصروف 👆</p>'}</div>
+ ${d.end!=null?`<p class="mut" style="text-align:center">اليوم اتقفل ✓ رجعت بـ ${N(d.end)} جنيه</p>`:`<button class="wide" onclick="endS()">🌙 إنهاء اليوم وعدّ الفلوس</button>`}`;
+}
+function vault(){
+ const v=S.vault,dd=due();
+ return `<div class="gl card vh"><div class="lbl" style="color:#f3e5ab">خزنة الطوارئ 🔐</div><div class="big"><span data-v="${v.bal}">٠</span> <small>جنيه</small></div>
+ <p class="mut" style="color:#f3e5ab">${dd>0?`لسه عليك ترجّع ${N(dd)} جنيه لما تقدر.`:'كاملة. للطوارئ بس، ومش داخلة في حساب اليوم.'}</p>
+ <div class="bar"><i data-w="${Math.min(100,v.bal/S.target*100)}" style="width:0;background:var(--gold)"></i></div></div>
+ <div class="g2"><button class="act" style="background:rgba(191,90,242,.25)" onclick="vS(-1)"><em>↗️</em>سحب</button><button class="act" style="background:rgba(255,214,10,.2)" onclick="vS(1)"><em>↙️</em>إرجاع</button></div>
+ <div class="gl card"><h2>السجل</h2>${v.log.slice().reverse().map(x=>`<div class="tx"><div class="ti">${x.a<0?'↗️':'↙️'}</div><div>${esc(x.r)}<small>${esc(x.d)}</small></div><b class="${x.a<0?'n':'p'}">${x.a<0?'−':'+'}${N(Math.abs(x.a))}</b></div>`).join('')||'<p class="mut">محدش لمسها. كويس 👌</p>'}</div>`;
+}
+function stats(){
+ const ks=Object.keys(S.days).filter(k=>k.startsWith(MK)&&S.days[k].start!=null),cat={};let sp=0,inc=0,com=0;
+ ks.forEach(k=>{const d=S.days[k];sp+=sum(d,'e');inc+=sum(d,'i');(d.tx||[]).filter(x=>x.c=='عمولة').forEach(x=>com+=x.a);(d.tx||[]).filter(x=>x.t=='e').forEach(x=>cat[x.c]=(cat[x.c]||0)+x.a)});
+ const e=Object.entries(cat).sort((a,b)=>b[1]-a[1]);
+ if(!e.length)return `<div class="gl card"><h2>الإحصائيات</h2><p class="mut">سجّل كام مصروف وهتظهر هنا أرقامك وتوصياتك.</p></div>`;
+ const pk=key(new Date(now.getFullYear(),now.getMonth()-1,1)).slice(0,7);let ps=0;const pc={};
+ Object.keys(S.days).filter(k=>k.startsWith(pk)).forEach(k=>(S.days[k].tx||[]).filter(x=>x.t=='e').forEach(x=>{pc[x.c]=(pc[x.c]||0)+x.a;ps+=x.a}));
+ const k2=e.filter(x=>x[0]!=UNK),[tc,tv]=k2[0]||e[0],lo=e[e.length-1];
+ let tips=[`${IC[tc]||''} ${tc} كلفتك ${N(tv)} جنيه الشهر ده. لو قللتها للنص توفر ${N(tv/2)}.`];
+ if(pc[tc])tips.push(`الشهر اللي فات صرفت في ${tc} ${N(pc[tc])} جنيه، يعني ${tv>pc[tc]?'زادت':'قلّت'} ${N(Math.abs(tv-pc[tc]))}.`);
+ if(cat[UNK])tips.push(`❓ فيه ${N(cat[UNK])} جنيه مصروف غير معروف. سجّل مصاريفك أول بأول عشان يقلّوا.`);
+ if(ps)tips.push(`صرفت الشهر اللي فات ${N(ps)} جنيه، والشهر ده لحد دلوقتي ${N(sp)}.`);
+ return `<div class="gl card"><div class="lbl">صرفت من ميزانية الشهر</div><div class="big"><span data-v="${sp}">٠</span> <small>من ${N(S.budget)}</small></div><div class="bar"><i data-w="${Math.min(100,sp/S.budget*100)}" style="width:0;background:${sp>S.budget?'var(--red)':'var(--grn)'}"></i></div></div>
+ <div class="g2"><div class="gl card" style="margin:0"><div class="lbl">متوسط الصرف اليومي</div><b class="n" style="font-size:26px">${N(sp/(ks.length||1))}</b></div><div class="gl card" style="margin:0"><div class="lbl">الدخل الزيادة</div><b class="p" style="font-size:26px">${N(inc)}</b></div></div>
+ <div class="gl card"><h2>الدخل</h2><div class="tx"><div class="ti">💼</div><div>المرتب الشهري</div><b class="p">${S.salary?N(S.salary):'—'}</b></div><div class="tx"><div class="ti">🎯</div><div>عمولات الشهر ده</div><b class="p">${N(com)}</b></div></div>
+ <div class="gl card"><h2>صرفت فين؟</h2>${e.map(([c,v])=>`<div class="br"><span>${IC[c]||'🛍'} ${esc(c)}</span><div><i data-w="${v/e[0][1]*100}" style="width:0"></i></div><b>${N(v)}</b></div>`).join('')}<p class="mut" style="margin-top:8px">أكتر: ${esc(e[0][0])} · أقل: ${esc(lo[0])}</p></div>
+ <div class="gl card"><h2>تقدر توفر 💡</h2>${tips.map(t=>`<div class="tip">${t}</div>`).join('')}</div>`;
+}
+function startS(){sheet(`<h3>نزلت بكام النهارده؟</h3><p class="mut">عدّ الكاش اللي في إيدك واكتبه.</p><input id="a" type="number" inputmode="decimal" placeholder="مثلًا ١٨٠"><button class="wide p" onclick="doStart()">ابدأ اليوم</button>`)}
+function doStart(){const a=parseFloat($('#a').value);if(!(a>=0)){toast('اكتب المبلغ الأول');return}S.days[TK]={start:a,tx:[],end:null};save();closeS();render();toast('يوم موفق ✨')}
+function txS(t){cat_=CATS[0][0];src_=null;sheet(`<h3>${t=='e'?'مصروف جديد':t=='c'?'عمولة جديدة 💼':'دخل جديد'}</h3><input id="a" type="number" inputmode="decimal" placeholder="المبلغ">${t=='e'?`<div class="cg">${CATS.map((c,i)=>`<button class="${i?'':'on'}" onclick="pick(this,'${c[0]}')"><span>${c[1]}</span>${c[0]}</button>`).join('')}</div>`:''}<p class="mut" style="margin-top:6px">${t=='e'?'اتصرف منين؟':'دخل فين؟'} (إجباري)</p><div class="sg"><button onclick="pickS(this,'cash')"><span style="color:var(--grn)">${IK.cash}</span>كاش</button><button onclick="pickS(this,'wal')"><span style="color:var(--gold)">${IK.wal}</span>محفظة</button><button onclick="pickS(this,'ins')"><span style="color:var(--blue)">${IK.ins}</span>إنستا باي</button></div><input id="n" class="s" type="text" placeholder="ملاحظة (اختياري)"><button class="wide ${t=='e'?'':'p'}" style="${t=='e'?'background:var(--red);color:#fff;border:0':''}" onclick="doTx('${t}')">حفظ</button>`)}
+function pickS(b,s){src_=s;document.querySelectorAll('.sg button').forEach(x=>x.classList.remove('on'));b.classList.add('on')}
+function pick(b,c){cat_=c;document.querySelectorAll('.cg button').forEach(x=>x.classList.remove('on'));b.classList.add('on')}
+function doTx(t){const a=parseFloat($('#a').value);if(!(a>0)){toast('اكتب مبلغ صحيح');return}if(!src_){toast('اختار الأول: كاش ولا محفظة ولا إنستا باي');return}const ty=t=='e'?'e':'i';day().tx.push({t:ty,a,s:src_,c:t=='e'?cat_:t=='c'?'عمولة':'دخل',n:$('#n').value});bal(src_,ty=='e'?-a:a);save();closeS();render();toast(t=='e'?'اتسجل المصروف':t=='c'?'مبروك العمولة 🎉':'اتسجل الدخل 💰')}
+function del(i){const x=day().tx[i];if(x)bal(x.s,x.t=='e'?x.a:-x.a);day().tx.splice(i,1);save();render();toast('اتمسحت')}
+function endS(){sheet(`<h3>عدّ فلوسك 🌙</h3><p class="mut">رجعت بكام فعلًا؟ أي فرق هيتسجل تلقائيًا.</p><input id="a" type="number" inputmode="decimal" placeholder="الباقي معاك" oninput="pv()"><p id="pv" class="mut" style="min-height:44px"></p><button class="wide p" onclick="doEnd()">قفّل اليوم</button>`)}
+function pv(){const a=parseFloat($('#a').value),p=$('#pv');if(isNaN(a)){p.textContent='';return}const f=rem(day())-a;p.style.color=f>0?'var(--red)':'var(--grn)';p.textContent=f>0?`فيه فرق ناقص ${N(f)} جنيه هيتسجل "مصروف غير معروف".`:f<0?`معاك زيادة ${N(-f)} جنيه هتتسجل دخل.`:'حسابك مظبوط بالملّي 👌'}
+function doEnd(){const a=parseFloat($('#a').value);if(!(a>=0)){toast('اكتب المبلغ الأول');return}const d=day(),f=rem(d)-a;
+ if(f>0)d.tx.push({t:'e',a:f,c:UNK,n:'فرق عند الإقفال'});else if(f<0)d.tx.push({t:'i',a:-f,c:'دخل',n:'فرق عند الإقفال'});
+ d.end=a;save();closeS();render();toast('اتقفل اليوم 🌙')}
+function vS(s){sheet(`<h3>${s<0?'سحب من الخزنة':'إرجاع للخزنة'}</h3><input id="a" type="number" inputmode="decimal" placeholder="المبلغ">${s<0?'<input id="r" class="s" type="text" placeholder="إيه السبب؟ (مطلوب)">':`<p class="mut">المطلوب إرجاعه: ${N(due())} جنيه</p>`}<button class="wide ${s<0?'pu':'gd'}" onclick="vDo(${s})">${s<0?'تأكيد السحب':'تأكيد الإرجاع'}</button>`)}
+function vDo(s){const a=parseFloat($('#a').value),r=s<0?$('#r').value.trim():'رجّعت للخزنة';
+ if(!(a>0)){toast('اكتب مبلغ صحيح');return}
+ if(s<0&&a>S.vault.bal){toast('أكبر من رصيد الخزنة');return}
+ if(s<0&&!r){toast('اكتب السبب عشان تفتكره');return}
+ if(s>0&&a>due()){toast(due()?'أكبر من المطلوب إرجاعه':'الخزنة كاملة');return}
+ S.vault.bal+=s*a;S.vault.log.push({a:s*a,r,d:now.toLocaleDateString('ar-EG',{day:'numeric',month:'short'})});save();closeS();render();toast(s<0?'اتسجل السحب. افتكر ترجّعه':'عاش! رجّعت للخزنة 💪')}
+function settings(){sheet(`<h3>الإعدادات</h3><p class="mut">مرتبك الشهري بالجنيه</p><input id="sal" type="number" inputmode="decimal" value="${S.salary||''}"><button class="wide p" onclick="saveSal()">تحديث المرتب</button><p class="mut" style="margin-top:18px">الميزانية الشهرية بالجنيه</p><input id="b" type="number" value="${S.budget}"><button class="wide p" onclick="saveB()">حفظ الميزانية</button>
+ <p class="mut" style="margin-top:18px">البيانات محفوظة على موبايلك بس. امسح بيانات المتصفح يمسحها، فخد نسخة احتياطية كل فترة.</p><button class="wide" onclick="bk()">📋 نسخ البيانات (نسخة احتياطية)</button>
+ <textarea id="rs" rows="3" placeholder="الصق النسخة الاحتياطية هنا للاسترجاع" style="margin-top:12px"></textarea><button class="wide" onclick="rst()">استرجاع من النسخة</button>`)}
+function salS(){sheet(`<h3>أهلًا بيك 👋</h3><p class="mut">مرتبك الشهري كام؟ هنسألك مرة واحدة بس، وتقدر تحدّثه من الإعدادات.</p><input id="a" type="number" inputmode="decimal" placeholder="مثلًا ٨٠٠٠"><button class="wide p" onclick="doSal()">حفظ وابدأ</button>`)}
+function doSal(){const v=parseFloat($('#a').value);if(!(v>0)){toast('اكتب مرتبك الأول');return}S.salary=v;S.budget=v;save();closeS();render();if(S.wal==null)setTimeout(accS,650);else if(!day())setTimeout(startS,650)}
+function saveSal(){const v=parseFloat($('#sal').value);if(!(v>0)){toast('اكتب مرتب صحيح');return}const same=S.salary==null||S.budget==S.salary;S.salary=v;if(same)S.budget=v;save();closeS();render();toast('اتحدّث المرتب ✓')}
+function cashS(){const d=day();if(!d)return;sheet(`<h3>تعديل الكاش</h3><p class="mut">ده رقم الكاش اللي بدأت بيه النهارده. لو كتبته غلط صحّحه، والمتبقي هيتحسب لوحده.</p><input id="a" type="number" inputmode="decimal" value="${d.start}"><button class="wide p" onclick="doCash()">حفظ</button>`)}
+function doCash(){const v=parseFloat($('#a').value);if(!(v>=0)){toast('اكتب رقم صحيح');return}day().start=v;save();closeS();render();toast('اتعدّل الكاش ✓')}
+function accS(){sheet(`<h3>فلوسك الإلكترونية 📲</h3><p class="mut">رصيد المحفظة وإنستا باي دلوقتي كام؟ لو معندكش واحد منهم سيبه فاضي، أو دوس تخطي.</p><p class="mut" style="margin-top:8px">المحفظة 👛</p><input id="w" type="number" inputmode="decimal" placeholder="٠"><p class="mut">إنستا باي 📲</p><input id="i" type="number" inputmode="decimal" placeholder="٠"><button class="wide p" onclick="doAcc(0)">حفظ</button><button class="wide" onclick="doAcc(1)">تخطي (الاتنين صفر)</button>`)}
+function doAcc(skip){S.wal=skip?0:Math.max(0,parseFloat($('#w').value)||0);S.ins=skip?0:Math.max(0,parseFloat($('#i').value)||0);save();closeS();render();if(!day())setTimeout(startS,650)}
+function balS(k){sheet('<h3>'+(k=='wal'?'رصيد المحفظة 👛':'رصيد إنستا باي 📲')+'</h3><p class="mut">اكتب الرصيد الفعلي دلوقتي.</p><input id="a" type="number" inputmode="decimal" value="'+(S[k]||0)+'"><button class="wide p" onclick="doBal(\''+k+'\')">حفظ</button>')}
+function doBal(k){const v=parseFloat($('#a').value);if(!(v>=0)){toast('اكتب رقم صحيح');return}S[k]=v;save();closeS();render();toast('اتحدّث الرصيد ✓')}
+function saveB(){const v=parseFloat($('#b').value);if(!(v>0)){toast('اكتب ميزانية صحيحة');return}S.budget=v;save();closeS();render();toast('اتحدّثت الميزانية')}
+function bk(){const t=JSON.stringify(S);if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t).then(()=>toast('اتنسخت البيانات ✓'),()=>prompt('انسخ:',t));else prompt('انسخ:',t)}
+function rst(){try{const o=JSON.parse($('#rs').value);if(!o||typeof o.days!='object')throw 0;S=norm(o);save();closeS();render();toast('اتسترجعت البيانات ✓')}catch(e){toast('النسخة مش صالحة')}}
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{tab=b.dataset.t;render();scrollTo(0,0)});
+render();if(S.salary==null)setTimeout(salS,500);else if(S.wal==null)setTimeout(accS,500);else if(!day())setTimeout(startS,500);
+</script>
+</body>
+</html>
